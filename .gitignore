@@ -43,3 +43,12 @@
 
 # debug information files
 *.dwo
+
+# CMake / build outputs
+build/
+cmake-build-*/
+.cache/
+out/
+
+# IDE
+.idea/
