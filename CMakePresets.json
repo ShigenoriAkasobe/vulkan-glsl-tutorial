@@ -1,0 +1,32 @@
+{
+  "version": 8,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 26,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "msvc-x64",
+      "displayName": "MSVC x64 (Visual Studio)",
+      "generator": "Visual Studio 18 2026",
+      "binaryDir": "${sourceDir}/build/msvc-x64",
+      "architecture": {
+        "value": "x64"
+      },
+      "cacheVariables": {
+        "VGT_ENABLE_VALIDATION": "ON"
+      },
+      "environment": {
+        "VULKAN_SDK": "C:/VulkanSDK/1.4.335.0"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "msvc-x64-debug",
+      "configurePreset": "msvc-x64",
+      "configuration": "Debug"
+    }
+  ]
+}

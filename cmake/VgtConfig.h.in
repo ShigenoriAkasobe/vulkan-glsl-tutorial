@@ -1,0 +1,3 @@
+#pragma once
+
+#define VGT_ENABLE_VALIDATION @VGT_ENABLE_VALIDATION@

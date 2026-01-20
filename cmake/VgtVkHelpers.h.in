@@ -1,0 +1,12 @@
+#pragma once
+
+#include <vulkan/vulkan.h>
+
+#ifdef _WIN32
+  #define VK_USE_PLATFORM_WIN32_KHR
+#endif
+
+// Validation layers
+#ifndef VGT_ENABLE_VALIDATION
+  #define VGT_ENABLE_VALIDATION 1
+#endif
