@@ -1,5 +1,27 @@
 .vs/
 
+# CMake / Ninja build directories
+build/
+build-*/
+out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# CMake Presets user-local overrides
+CMakeUserPresets.json
+
+# FetchContent / external deps (usually under build trees)
+_deps/
+
+# Shader compilation outputs
+*.spv
+
 # cppbuild specific ignores
 
 # Prerequisites
@@ -43,3 +65,10 @@
 
 # debug information files
 *.dwo
+
+# Common editor/temp
+*.log
+*.tmp
+*.user
+*.filters
+*.suo
